@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Ввод данных</title>
+</head>
+<body>
+
+<div style="padding:2.5rem;">
+    <nav class="navbar navbar-light bg-light justify-content-between">
+          <ul class="nav nav-tabs  " >
+              <a class="navbar-brand" href="#">
+                <img src="../static/img/hh.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                HH-parser
+              </a>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="form_input.html">Форма</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+          </ul>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поисковая фраза" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
+          </form>
+        </nav>
+    <div class="alert alert-primary" role="alert">
+        <center><h1>Форма для отправки запроса</h1></center>
+    </div>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputVacancy">Название вакансии</label>
+          <input type="text" class="form-control" id="inputVacancy" placeholder="Название вакансии">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputRegion">Регион</label>
+          <input type="text" class="form-control" id="inputRegion" placeholder="Регион">
+        </div>
+        <div class="form-group col-md-4">
+        </div>
+      </div>
+      <div class="form-row" style="padding-bottom:20px; padding-top:20px;">
+          <div class="form-group col-md-3">
+          </div>
+          <div class="form-group col-md-2">
+             <label for="groupOpit">Требуемый опыт работы</label>
+          </div>
+          <div class="form-group col-md-4" id="groupOpit">
+            <div class="custom-control custom-radio">
+              <input type="radio" id="opitRadio1" name="opitRadio" class="custom-control-input">
+              <label class="custom-control-label" for="opitRadio1">Не имеет значения</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="opitRadio2" name="opitRadio" class="custom-control-input">
+              <label class="custom-control-label" for="opitRadio2">Нет опыта</label>
+            </div>
+              <div class="custom-control custom-radio">
+              <input type="radio" id="opitRadio3" name="opitRadio" class="custom-control-input">
+              <label class="custom-control-label" for="opitRadio3">От 1 года до 3 лет</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="opitRadio4" name="opitRadio" class="custom-control-input">
+              <label class="custom-control-label" for="opitRadio4">От 3 до 6 лет</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="opitRadio5" name="opitRadio" class="custom-control-input">
+              <label class="custom-control-label" for="opitRadio5">Более 6 лет</label>
+            </div>
+          </div>
+          <div class="form-group col-md-3">
+          </div>
+      </div>
+      <div class="form-row"  style="padding-bottom:20px;">
+          <div class="form-group col-md-3">
+          </div>
+          <div class="form-group col-md-2">
+             <label for="groupZanyatost">Тип занятости</label>
+          </div>
+          <div class="form-group col-md-4" id="groupZanyatost">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" id="zanyatostCheck1" name="zanyatostCheck" class="custom-control-input">
+              <label class="custom-control-label" for="zanyatostCheck1">Полная занятость</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" id="zanyatostCheck2" name="zanyatostCheck" class="custom-control-input">
+              <label class="custom-control-label" for="zanyatostCheck2">Частичная занятость</label>
+            </div>
+              <div class="custom-control custom-checkbox">
+              <input type="checkbox" id="zanyatostCheck3" name="zanyatostCheck" class="custom-control-input">
+              <label class="custom-control-label" for="zanyatostCheck3">Проектная работа/разовое задание</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" id="zanyatostCheck4" name="zanyatostCheck" class="custom-control-input">
+              <label class="custom-control-label" for="zanyatostCheck4">Волонтерство</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" id="zanyatostCheck5" name="zanyatostCheck" class="custom-control-input">
+              <label class="custom-control-label" for="zanyatostCheck5">Стажировка</label>
+            </div>
+          </div>
+          <div class="form-group col-md-3">
+          </div>
+      </div>
+      <div class="form-row" style="padding-bottom:20px;">
+        <div class="form-group col-md-3">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZp">Зарплата</label>
+          <input type="text" class="form-control" id="inputZp">
+        </div>
+        <div class="form-group col-md-1">
+          <label for="inputValuta">Валюта</label>
+          <select id="inputValuta" class="form-control">
+            <option selected>руб</option>
+            <option>USD</option>
+            <option>EUR</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+        </div>
+        <div class="form-group col-md-4">
+            <hr/>
+        </div>
+        <div class="form-group col-md-5">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+        </div>
+        <div class="form-group col-md-2">
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </div>
+        <div class="form-group col-md-7">
+        </div>
+      </div>
+    </form>
+</div>
+</body>
+</html>
