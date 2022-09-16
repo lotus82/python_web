@@ -9,6 +9,65 @@
     <title>Главная</title>
 </head>
 <body>
+    <div style="padding:2.5rem;">
+        <nav class="navbar navbar-light bg-light justify-content-between">
+          <ul class="nav nav-tabs  " >
+              <a class="navbar-brand" href="#">
+                <img src="../static/img/hh.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                HH-parser
+              </a>
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form_input.html">Форма</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+          </ul>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поисковая фраза" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
+          </form>
+        </nav>
 
+        <div class="alert alert-primary" role="alert">
+            <center><h1>Главная</h1></center>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="../static/img/slide1.png" alt="Первый слайд">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="../static/img/slide2.png" alt="Второй слайд">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="../static/img/slide3.png" alt="Третий слайд">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Предыдущий</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Следующий</span>
+                  </a>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+    </div>
 </body>
 </html>

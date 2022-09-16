@@ -9,6 +9,91 @@
     <title>Контакты</title>
 </head>
 <body>
-
+    <div style="padding:2.5rem;">
+        <nav class="navbar navbar-light bg-light justify-content-between">
+          <ul class="nav nav-tabs  " >
+              <a class="navbar-brand" href="#">
+                <img src="../static/img/hh.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                HH-parser
+              </a>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form_input.html">Форма</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacts.html">Контакты</a>
+              </li>
+          </ul>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поисковая фраза" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
+          </form>
+        </nav>
+        <div class="alert alert-primary" role="alert">
+            <center><h1>Контакты</h1></center>
+        </div>
+         <section class="Material-contact-section section-padding section-dark">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                      <h1 class="section-title">Парсер сайта hh.ru</h1>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                    <p>Этот сервис предназначен для парсинга сайта hh.ru.
+                        Можно ввести параметры запроса и получить востребованность ключевых навыков при поиске вакансий.
+                        Можете написать нам по всем необходимым вопросам или связаться по указанным контактным данным.</p>
+                    <div class="find-widget">
+                     Организация:  <a href="https://undefined.ru">Тестовая</a>
+                    </div>
+                    <div class="find-widget">
+                     Адрес: <a href="#">413840 Саратовская область г. Балаково</a>
+                    </div>
+                    <div class="find-widget">
+                      Телефон:  <a href="#">+ 7(9ХХ)-ХХХ-ХХ-ХХ</a>
+                    </div>
+                    <div class="find-widget">
+                      Сайт:  <a href="https://undefined.ru">www.undefined.ru</a>
+                    </div>
+                    <div class="find-widget">
+                       Расписание: <a href="#">Пн-Вс: 00:00 - 23.59</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                      <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                          <div class="form-group label-floating">
+                            <label class="control-label" for="name">Имя</label>
+                            <input class="form-control" id="name" type="text" name="name" required data-error="Введите Ваше имя">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label" for="email">Email</label>
+                            <input class="form-control" id="email" type="email" name="email" required data-error="Введите Ваш Email">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Тема</label>
+                            <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Укажите тему сообщения">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                          <div class="form-group label-floating">
+                              <label for="message" class="control-label">Сообщение</label>
+                              <textarea class="form-control" rows="3" id="message" name="message" required data-error="Напишите Ваше сообщение"></textarea>
+                              <div class="help-block with-errors"></div>
+                          </div>
+                          <div class="form-submit mt-5">
+                              <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Отправить</button>
+                              <div id="msgSubmit" class="h3 text-center hidden"></div>
+                              <div class="clearfix"></div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </section>
+    </div>
 </body>
 </html>
